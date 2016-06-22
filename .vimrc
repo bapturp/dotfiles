@@ -26,8 +26,12 @@ set number
 syntax on
 " Highlight current line
 "set cursorline
+
 " Make tabs as wide as two spaces
 set tabstop=4
+set shiftwidth=4
+" Convert tab to space
+set expandtab
 
 " Highlight searches
 set hlsearch
@@ -53,4 +57,7 @@ set title
 set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
+
+" Syntax for yaml files
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
