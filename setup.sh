@@ -5,13 +5,10 @@ VER=$(lsb_release -sr)
 
 ub1404() {
   cd $HOME 
-  curl -O https://raw.githubusercontent.com/bapturp/dotfiles/master/.bash_profile
-  curl -O https://raw.githubusercontent.com/bapturp/dotfiles/master/.bashrc
-  curl -O https://raw.githubusercontent.com/bapturp/dotfiles/master/.vimrc
+  curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.bash_profile
+  curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.bashrc
+  curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.vimrc
 }
-
-
-
 
 case $OS in
   "Ubuntu")
@@ -19,15 +16,16 @@ case $OS in
       "14.04")
         echo -e "Ubuntu 14.04 detected, installing dofiles"
         ub1404
-        cd ~
+        exit 0
         ;;
       *)
-        echo "unknow version of Ubuntu"
+        echo "Unknow version of Ubuntu, exiting."
+        exit 1
         ;;
     esac
   ;;
   *)
-    echo "Unknow distribution"
+    echo "Unknow distribution, exiting."
     exit 1
     ;;
 esac
