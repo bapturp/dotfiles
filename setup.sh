@@ -19,13 +19,13 @@ case $OS in
         exit 0
         ;;
       *)
-        echo "Unknow version of Ubuntu, exiting."
+        echo "Unsupported Ubuntu version, exiting."
         exit 1
         ;;
     esac
   ;;
   *)
-    echo "Unknow distribution, exiting."
+    echo "Unsupported distribution, exiting."
     exit 1
     ;;
 esac
