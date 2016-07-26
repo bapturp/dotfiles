@@ -8,6 +8,9 @@ ub1404() {
   curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.bash_profile
   curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.bashrc
   curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.vimrc
+  [ ! -d $HOME/.vim/colors ] && mkdir -p ~/.vim/colors
+  cd $HOME/.vim/colors
+  curl -sO https://raw.githubusercontent.com/bapturp/dotfiles/master/.vim/colors/solarized.vim
 }
 
 case $OS in
