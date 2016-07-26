@@ -1,8 +1,8 @@
 # dotfiles
 
-Tested on Unbuntu 14.04
+Tested on Ubuntu 14.04
 
-Could work on Debian 7/8, Ubuntu 12/16 too
+Could work on Debian 7/8, Ubuntu 12/16 but not tested
 
 ### Installation
 ```
