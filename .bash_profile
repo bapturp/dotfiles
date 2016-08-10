@@ -17,9 +17,6 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 shopt -s globstar
 
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell
-
 # don't put duplicate lines or lines starting with space in the history.
 export HISTCONTROL='ignoreboth'
 
